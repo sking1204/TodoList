@@ -1,5 +1,7 @@
 body{
     background-color: #f3d0a4;
+    display:flexbox;
+    
 
 }
 
@@ -9,19 +11,10 @@ body{
     left:50%;
     transform: translate(-50%, -50%);
 }
-/* 
-.todo-list-input{
-    /* box-sizing:border-box; */
-    /* background-color:#cfa093;
-    border-radius: 5px; */
-    /* padding: 10px 10px; */
-    /* border-color:#893f71; */
-    /* border-width: 1rem; */
-    
-/* } */ 
+
 
 .todo-list-input{
-    /* background-color:#cfa093 ; */
+    
     background-color: #cfa093d9;
     border-color:#893f71;
     border-width: 2px;
@@ -35,16 +28,12 @@ body{
 
 body{
     font-family: 'Lora', serif;
+    /* display:flex; */
 }
 
 .todo-form input[type='submit']{
-    /* background-color:#90378a; */
-    /* background-color: #f3d0a4; */
-    /* background-color: #cfa093; */
     background-color: #ac6f82;
     height:31px;
-    /* border-radius: 5px;
-    font-size:10px; */
     border-width: 2px;
     border-radius:5px; 
     margin-right:0.3rem;
@@ -59,42 +48,28 @@ body{
 .todo-list{
     box-shadow:0px 0px 7px 9px #727784;
     height:250px;
+    padding:2em;
    
     
 }
 
+li{
+    display:inline-block;
+    width:50%;
+    
+    
+}
+
+button{
+    margin-left:40px;
+}
 
 
-/* body {
-    background-color: #f3d0a4;
-    /* position:absolute; */
-    /* min-height: 70vh; */
-    /* padding: 4rem;  */
-    /* box-sizing: border-box; */
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center;
-    color: #660e60;
-    font-family: 'Lora', serif;
-    text-align: center;
-    font-size: 130%;  
-  } */
 
-  /* .todo-list {
-    box-sizing: border-box;
-    background-color: black; */ 
-    /* padding: 0.7rem;
-    border-bottom-right-radius: 15px 3px;
-    border-bottom-left-radius:3px 15px;
-    border: solid 3px transparent;
-    border-bottom: dashed 3px #ea95e0;
-    font-family: 'Gochi Hand', cursive;
-    font-size: 1rem;
-    color: hsla(260, 2%, 25%, 0.7);
-    width: 70%;
-    margin-bottom: 20px;
-  /* &:focus { */
-    /* outline: none; */
-    /* border: solid 3px #ea95e0; */ 
-    /* width: 40%; */
-  /* } */
+
+
+
+
+
+
+
