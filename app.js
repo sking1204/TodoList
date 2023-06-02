@@ -29,7 +29,7 @@ todoForm.addEventListener('submit', function (e) {
     
     console.log({localValueJSON})
 
-    console.log(Object.values({localValueJSON}))
+    
 
 
 
@@ -49,7 +49,9 @@ todoForm.addEventListener('submit', function (e) {
 
 
   newTodo.addEventListener("click", function() {
-    newTodo.classList.toggle('completed');
+  newTodo.classList.toggle('completed');
+  newTodo.classList('positioning')
+    
 
      
   })
