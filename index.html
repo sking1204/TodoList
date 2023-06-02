@@ -3,34 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>To Do List</title>
-    <link rel="stylesheet" href="app.css">
-   
+    <link rel="stylesheet" href="2app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=EB+Garamond:ital@0;1&family=Lora&family=Montserrat:ital,wght@1,300&family=Open+Sans:wght@300&family=Playfair+Display:ital@0;1&family=Roboto+Condensed:wght@300&family=Roboto:wght@100&family=Varela+Round&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
-  
+
+<div class ="todo-list-page">
+
+    <div class="header">
+        <h1>Your Todos</h1>
+    </div>
     
+    <div class ="todo-form">
+        <form action="#" id="todoForm"> 
+            <input class="todo-list-input" type="text" name="task" placeholder="Description"id="task" >    
+            <input type="submit" value="Add Todo" id="tasksubmit">             
+        </form>
+    </div>
 
-<div class ="positioning">
-
-    <h1>Your Todos</h1>
-    
-    <form action="#" id="todoForm"> 
-    <input class="todo-list-input" type="text" name="task" placeholder="Description"id="task" >    
-    <input type="submit" value="Add Todo" id="tasksubmit">
-    </form>
-
-    <ul>
-        
-    </ul>
+    <div class ="todo-list">
+        <ul class ="todo-list-item-placeholder">
+        <li>Testing</li>
+        <li>Testing</li>
+        <li>Testing</li>
+        <li>Testing</li>
+        <li>Testing</li>
+        </ul>
+    </div>
 
 </div>
   
 
-<!-- <div class ="listposition">
-   
-</div>
-  -->
-    <script src="app.js"></script>
+
+<script src="2app.js"></script>
 </body>
 </html>
