@@ -50,7 +50,7 @@ todoForm.addEventListener('submit', function (e) {
 
   newTodo.addEventListener("click", function() {
   newTodo.classList.toggle('completed');
-  newTodo.classList('positioning')
+  newTodo.classList.add('positioning');
     
 
      
@@ -69,7 +69,7 @@ todoForm.addEventListener('submit', function (e) {
     
 
   
-})
+ })
 
 
 

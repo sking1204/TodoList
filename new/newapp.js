@@ -2,10 +2,11 @@
 
 //QUERIES
 
-const todoForm =document.querySelector('.todo-form')
+const todoForm =document.querySelector('#todoForm')
 const todoFormInput=document.querySelector('input#task.todo-list-input')
 const todoList=document.querySelector('ul.todo-list')
-const todoValue=todoFormInput.value;
+// const todoValue=todoFormInput.value;
+
 let savedTodo=[];
 let localStorageObj =localStorage.getItem("todos");
 let localStorObjstr=JSON.parse(localStorageObj);
@@ -41,22 +42,47 @@ function addNewTodo(){
     const removeBtn=document.createElement('button');     
     removeBtn.innerText="X";     
     newTodoItem.append(removeBtn);
+
+    // todoForm.reset();
+    
+    
+
+
+    
+
+
+    newTodoItem.addEventListener("click", function() {
+    newTodoItem.classList.toggle('completed');
+    newTodoItem.classList.add('positioning');
+     
+   
+  
+       
+    })
+ 
     removeBtn.addEventListener("click",function(){
     removeBtn.parentElement.remove();
         for(let i=0; i<savedTodo.length;i++){
             if(savedTodo[i] === todoFormInput.value){
-                savedTodo.splice(i,1);
+                savedTodo.splice(i,1)[0];
             }
         }
+
+        
+
+    
         localStorage.setItem("todos", JSON.stringify(savedTodo))
         });
 
-        
+        //todoForm.reset(); THIS DOESNT WORK HERE...
    
 
     savedTodo.push(todoFormInput.value);
 
+    //  todoForm.reset(); THIS DOESNT WORK HERE
+
     localStorage.setItem("todos", JSON.stringify(savedTodo))
+    //todoForm.reset() DOESN"T WORK HERE
 
     //Maybe wright a function....something like loop over
     //values in local storage and if the there is a value in
@@ -69,6 +95,10 @@ function addNewTodo(){
     // const localValueJSON=JSON.parse(localValueStr)
     
     // console.log({localValueJSON})
+
+
+
+    
    
 }
 
